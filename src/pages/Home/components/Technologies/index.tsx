@@ -1,3 +1,4 @@
+import Tag from "@components/Tag";
 import TechnologiesItem from "@pages/Home/components/Technologies/TechnologiesItem.tsx";
 import IconJS from "@assets/icons/icon-javascript.svg?react";
 import IconTS from "@assets/icons/icon-typescript.svg?react";
@@ -7,6 +8,7 @@ import IconSass from "@assets/icons/icon-sass.svg?react";
 import IconTailwind from "@assets/icons/icon-tailwind.svg?react";
 import IconNodejs from "@assets/icons/icon-nodejs.svg?react";
 import IconGit from "@assets/icons/icon-git.svg?react";
+import BlockDescription from "@pages/Home/components/BlockDescription";
 
 
 
@@ -23,21 +25,17 @@ const technologiesItemsProps = [
 
 
 function Technologies() {
-  console.log(technologiesItemsProps)
   return (
-    <div className="dark:bg-gray-900">
-      <div className="container py-16 flex flex-col items-center sm:py-24">
+    <div className="py-16 sm:py-24 dark:bg-gray-900">
+      <div className="container flex flex-col items-center">
 
-        <div className="mb-4 py-1 px-5 bg-gray-200 rounded-xl dark:bg-gray-700">
-          <h3 className="text-gray-600 font-medium text-sm dark:text-gray-300">
-            Technologies
-          </h3>
-        </div>
+        <Tag className="mb-4">
+          Technologies
+        </Tag>
 
-        <p className="mb-6 text-gray-600 text-xl text-center dark:text-gray-300 sm:mb-12">
+        <BlockDescription>
           The skills, tools and technologies I am really good at:
-        </p>
-
+        </BlockDescription>
 
         <div className="w-full grid gap-y-12 grid-cols-3 sm:grid-cols-5 lg:grid-cols-8">
           {technologiesItemsProps.map(({title, icon}) =>

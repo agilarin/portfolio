@@ -4,8 +4,8 @@ import IconLocation from "@assets/icons/icon-location.svg?react";
 
 function Intro() {
   return (
-    <div className="dark:bg-gray-900">
-      <div className="container py-16 sm:py-24">
+    <div className="py-16 sm:py-24 dark:bg-gray-900">
+      <div className="container">
 
         <div className="mr-12">
           <h2 className="mb-2 text-gray-900 text-4xl leading-tight font-bold dark:text-gray-50 md:text-6xl">
