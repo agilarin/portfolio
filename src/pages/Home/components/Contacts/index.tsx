@@ -10,17 +10,17 @@ function Contacts() {
       <div className="container flex flex-col items-center">
 
         <Tag className="mb-4">
-          Get in touch
+          Как связаться
         </Tag>
 
         <BlockDescription>
-          What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
+          Это мои контактные данные, через которые со мной можно связаться.
         </BlockDescription>
 
         <CopyList/>
 
         <p className="mb-2 text-gray-600 text-center dark:text-gray-300">
-          You may also find me on these platforms!
+          Вы также можете найти меня на этих платформах!
         </p>
         <SocialMedia/>
 

@@ -2,14 +2,18 @@ import SocialMedia from "@components/SocialMedia";
 import IconLocation from "@assets/icons/icon-location.svg?react";
 
 
+
 function Intro() {
   return (
     <div className="py-16 sm:py-24 dark:bg-gray-900">
       <div className="container">
 
         <div className="mr-12">
-          <h2 className="mb-2 text-gray-900 text-4xl leading-tight font-bold dark:text-gray-50 md:text-6xl">
-            Hi, I’m Vladimir 👋
+          <h1 className="mb-3 text-4xl text-gray-900 leading-tight font-bold md:text-5xl dark:text-gray-50">
+            Владимир Гришин
+          </h1>
+          <h2 className="mb-4 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-50">
+            Junior Frontend Разработчик
           </h2>
           <p className="mb-12 text-gray-600 dark:text-gray-300">
             I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible,
@@ -17,7 +21,7 @@ function Intro() {
           </p>
           <div className="mb-12 flex items-center">
             <IconLocation className="mr-2 stroke-gray-600 dark:stroke-gray-300"/>
-            <span className="text-gray-600 dark:text-gray-300">Россия, Красноярск</span>
+            <span className="text-gray-600 dark:text-gray-300">Россия, Красноярский край, Канск</span>
           </div>
 
           <SocialMedia/>

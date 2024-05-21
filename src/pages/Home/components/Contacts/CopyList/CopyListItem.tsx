@@ -7,23 +7,20 @@ interface CopyListItemProps {
   icon?: React.ReactNode
 }
 
+
 function CopyListItem({value, icon}: CopyListItemProps) {
 
-  function copyTextToClipboard() {
-    navigator.clipboard.writeText(value).then(() => {
-    })
-      .catch(err => {
-        console.log('Something went wrong', err);
-      });
+  async function copyTextToClipboard() {
+    await navigator.clipboard.writeText(value)
   }
 
   return (
-    <li className="flex items-center">
-      {icon && <div className="mr-5">
+    <li className="flex items-center space-x-4 lg:space-x-3">
+      <div className="p-1.5">
         {icon}
-      </div>}
+      </div>
 
-      <span className="mr-5 text-gray-900 font-bold text-4xl dark:text-gray-50">
+      <span className="text-gray-900 font-bold text-lg sm:text-2xl lg:text-3xl dark:text-gray-50">
         {value}
       </span>
 
@@ -31,7 +28,7 @@ function CopyListItem({value, icon}: CopyListItemProps) {
         className="p-1.5"
         onClick={copyTextToClipboard}
       >
-        <IconCopy className="size-8 stroke-gray-600 dark:stroke-gray-300"/>
+        <IconCopy className="size-6 stroke-gray-600 dark:stroke-gray-300"/>
       </button>
     </li>
   );

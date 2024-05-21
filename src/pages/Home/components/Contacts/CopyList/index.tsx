@@ -3,8 +3,7 @@ import IconEmail from "@assets/icons/icon-email.svg?react";
 
 
 const copyListItemsProps = [
-  {value: "reachsagarshah@gmail.com", icon: <IconEmail className="stroke-gray-600 dark:stroke-gray-300"/> },
-  {value: "+91 8980500565"}
+  {value: "grivle@mail.ru", icon: <IconEmail className="size-6 stroke-gray-600 dark:stroke-gray-300"/> },
 ]
 
 function CopyList() {

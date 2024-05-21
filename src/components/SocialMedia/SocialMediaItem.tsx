@@ -11,6 +11,7 @@ function SocialMediaItem({to, children}: SocialMediaItemProps) {
     <a
       href={to}
       className="p-1.5"
+      target="_blank"
     >
       {children}
     </a>

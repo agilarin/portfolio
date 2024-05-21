@@ -1,25 +1,9 @@
 import {useEffect} from "react";
-import {RouterProvider, createBrowserRouter} from "react-router-dom";
-import Layout from "@components/Layout";
-import Home from "@pages/Home";
+import {RouterProvider} from "react-router-dom";
+import {router} from "@/router.tsx";
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout/>,
-    children: [
-    {
-      index: true,
-      element: <Home/>,
-    },
-    // {
-    //   path: "/catalog/:pathName",
-    //   element: <Catalog/>,
-    // },
-  ]
-  },
-]);
+
 
 
 function App() {

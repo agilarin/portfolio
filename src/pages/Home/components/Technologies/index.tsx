@@ -30,11 +30,11 @@ function Technologies() {
       <div className="container flex flex-col items-center">
 
         <Tag className="mb-4">
-          Technologies
+          Технологии
         </Tag>
 
         <BlockDescription>
-          The skills, tools and technologies I am really good at:
+          Мои основные инструметы и технологии:
         </BlockDescription>
 
         <div className="w-full grid gap-y-12 grid-cols-3 sm:grid-cols-5 lg:grid-cols-8">

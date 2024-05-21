@@ -1,11 +1,17 @@
+import ProjectsList from "@components/ProjectsList";
+import {projectsData} from "@/data.ts";
 
 
-
-
-function Project() {
+function Projects() {
   return (
-    <div></div>
+    <div className="min-h-full py-16 sm:py-24 dark:bg-gray-900">
+      <div className="container">
+
+        <ProjectsList projects={projectsData}/>
+
+      </div>
+    </div>
   );
 }
 
-export default Project;
+export default Projects;

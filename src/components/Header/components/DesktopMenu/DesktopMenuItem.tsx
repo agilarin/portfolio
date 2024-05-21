@@ -2,13 +2,12 @@ import {Link} from "react-router-dom";
 
 
 
-
 interface MenuItemProps {
   to: string,
-  value: string
+  name: string
 }
 
-function DesktopMenuItem({to, value}: MenuItemProps) {
+function DesktopMenuItem({to, name}: MenuItemProps) {
 
   return (
     <li className="mr-6">
@@ -16,7 +15,7 @@ function DesktopMenuItem({to, value}: MenuItemProps) {
         to={to}
         className="text-gray-600 dark:text-gray-300 font-medium"
       >
-        {value}
+        {name}
       </Link>
     </li>
 );

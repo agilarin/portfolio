@@ -6,11 +6,12 @@ import IconTelegram from "@assets/icons/icon-telegram.svg?react";
 function SocialMedia() {
   return (
     <div className="flex items-center">
-      <SocialMediaItem to="#">
-        <IconGithub className="stroke-gray-600 dark:stroke-gray-300"/>
+      <SocialMediaItem to="https://github.com/vlagris">
+        <IconGithub className="size-6 fill-gray-600 dark:fill-gray-300"/>
       </SocialMediaItem>
-      <SocialMediaItem to="#">
-        <IconTelegram className="fill-gray-600 dark:fill-gray-300"/>
+
+      <SocialMediaItem to="https://t.me/agilerin">
+        <IconTelegram className="size-6 fill-gray-600 dark:fill-gray-300"/>
       </SocialMediaItem>
     </div>
   );
