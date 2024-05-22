@@ -1,11 +1,11 @@
-import SocialMedia from "@components/SocialMedia";
-import IconLocation from "@assets/icons/icon-location.svg?react";
+import SocialMedia from "@/components/SocialMedia";
+import IconLocation from "@/assets/icons/icon-location.svg?react";
 
 
 
 function Intro() {
   return (
-    <div className="py-16 sm:py-24 dark:bg-gray-900">
+    <div className="py-16 sm:py-24">
       <div className="container">
 
         <div className="mr-12">

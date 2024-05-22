@@ -1,6 +1,6 @@
-import SocialMediaItem from "@components/SocialMedia/SocialMediaItem.tsx";
-import IconGithub from "@assets/icons/icon-github.svg?react";
-import IconTelegram from "@assets/icons/icon-telegram.svg?react";
+import SocialMediaItem from "@/components/SocialMedia/SocialMediaItem.tsx";
+import IconGithub from "@/assets/icons/icon-github.svg?react";
+import IconTelegram from "@/assets/icons/icon-telegram.svg?react";
 
 
 function SocialMedia() {

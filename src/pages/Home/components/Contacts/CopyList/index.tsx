@@ -1,5 +1,5 @@
-import CopyListItem from "@pages/Home/components/Contacts/CopyList/CopyListItem.tsx";
-import IconEmail from "@assets/icons/icon-email.svg?react";
+import CopyListItem from "@/pages/Home/components/Contacts/CopyList/CopyListItem.tsx";
+import IconEmail from "@/assets/icons/icon-email.svg?react";
 
 
 const copyListItemsProps = [

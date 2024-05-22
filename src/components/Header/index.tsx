@@ -1,7 +1,7 @@
-import {PATHS} from "@/constans.ts";
-import BurgerMenu from "@components/Header/components/BurgerMenu";
-import DesktopMenu from "@components/Header/components/DesktopMenu";
-import Logo from "@components/Header/components/Logo.tsx";
+import {HOME_NAV} from "@/constans.ts";
+import BurgerMenu from "@/components/Header/components/BurgerMenu";
+import DesktopMenu from "@/components/Header/components/DesktopMenu";
+import Logo from "@/components/Header/components/Logo.tsx";
 
 
 export type MenuItem = {
@@ -11,14 +11,16 @@ export type MenuItem = {
 
 
 const menuItems: MenuItem[] = [
-  {to: PATHS.home, name: "Обо мне"},
-  {to: PATHS.projects, name: "Проекты"},
+  {to: `#${HOME_NAV.about}`, name: "Обо мне"},
+  {to: `#${HOME_NAV.technologies}`, name: "Технологии"},
+  {to: `#${HOME_NAV.projects}`, name: "Проекты"},
+  {to: `#${HOME_NAV.contacts}`, name: "Контакты"},
 ]
 
 
 function Header() {
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-950">
       <div className="container py-4 flex items-center justify-between">
         <Logo/>
         <DesktopMenu items={menuItems}/>

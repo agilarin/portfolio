@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {createPortal} from "react-dom";
-import {MenuItem} from "@components/Header";
-import MenuButton from "@components/Header/components/BurgerMenu/MenuButton.tsx";
-import BurgerMenuItem from "@components/Header/components/BurgerMenu/BurgerMenuItem.tsx";
-import ThemeSwitch from "@components/Header/components/ThemeSwitch.tsx";
+import {MenuItem} from "@/components/Header";
+import MenuButton from "@/components/Header/components/BurgerMenu/MenuButton.tsx";
+import BurgerMenuItem from "@/components/Header/components/BurgerMenu/BurgerMenuItem.tsx";
+import ThemeSwitch from "@/components/Header/components/ThemeSwitch.tsx";
 
 
 
@@ -23,12 +23,12 @@ function BurgerMenu({items}: BurgerMenuProps) {
 
 
   return (
-    <div className="sm:hidden">
+    <div className="md:hidden">
       <MenuButton show={show} setShow={setShow}/>
 
       {show && createPortal(
         <div
-          className="absolute inset-0 top-[68px] bg-gray-600/10 dark:bg-gray-50/10 sm:hidden"
+          className="absolute inset-0 top-[68px] bg-gray-600/10 dark:bg-gray-50/10 md:hidden"
           onClick={closeMenu}
         >
           <div className="w-[320px] h-full ml-auto bg-white dark:bg-gray-900">

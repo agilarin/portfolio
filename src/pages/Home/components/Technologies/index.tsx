@@ -1,14 +1,14 @@
-import Tag from "@components/Tag";
-import TechnologiesItem from "@pages/Home/components/Technologies/TechnologiesItem.tsx";
-import IconJS from "@assets/icons/icon-javascript.svg?react";
-import IconTS from "@assets/icons/icon-typescript.svg?react";
-import IconReact from "@assets/icons/icon-react.svg?react";
-import IconRedux from "@assets/icons/icon-redux.svg?react";
-import IconSass from "@assets/icons/icon-sass.svg?react";
-import IconTailwind from "@assets/icons/icon-tailwind.svg?react";
-import IconNodejs from "@assets/icons/icon-nodejs.svg?react";
-import IconGit from "@assets/icons/icon-git.svg?react";
-import BlockDescription from "@pages/Home/components/BlockDescription";
+import Tag from "@/components/Tag";
+import TechnologiesItem from "@/pages/Home/components/Technologies/TechnologiesItem.tsx";
+import IconJS from "@/assets/icons/icon-javascript.svg?react";
+import IconTS from "@/assets/icons/icon-typescript.svg?react";
+import IconReact from "@/assets/icons/icon-react.svg?react";
+import IconRedux from "@/assets/icons/icon-redux.svg?react";
+import IconSass from "@/assets/icons/icon-sass.svg?react";
+import IconTailwind from "@/assets/icons/icon-tailwind.svg?react";
+import IconNodejs from "@/assets/icons/icon-nodejs.svg?react";
+import IconGit from "@/assets/icons/icon-git.svg?react";
+import BlockDescription from "@/pages/Home/components/BlockDescription";
 
 
 
@@ -26,7 +26,7 @@ const technologiesItemsProps = [
 
 function Technologies() {
   return (
-    <div className="py-16 sm:py-24 dark:bg-gray-900">
+    <div className="py-16 sm:py-24">
       <div className="container flex flex-col items-center">
 
         <Tag className="mb-4">

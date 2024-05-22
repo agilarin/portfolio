@@ -1,12 +1,12 @@
-import Tag from "@components/Tag";
-import BlockDescription from "@pages/Home/components/BlockDescription";
+import Tag from "@/components/Tag";
+import BlockDescription from "@/pages/Home/components/BlockDescription";
 import CopyList from "@/pages/Home/components/Contacts/CopyList";
-import SocialMedia from "@components/SocialMedia";
+import SocialMedia from "@/components/SocialMedia";
 
 
 function Contacts() {
   return (
-    <div className="py-16 sm:py-24 dark:bg-gray-900">
+    <div className="py-16 sm:py-24">
       <div className="container flex flex-col items-center">
 
         <Tag className="mb-4">

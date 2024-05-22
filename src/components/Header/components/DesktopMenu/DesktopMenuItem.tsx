@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 
 
 
@@ -11,12 +10,12 @@ function DesktopMenuItem({to, name}: MenuItemProps) {
 
   return (
     <li className="mr-6">
-      <Link
-        to={to}
+      <a
+        href={to}
         className="text-gray-600 dark:text-gray-300 font-medium"
       >
         {name}
-      </Link>
+      </a>
     </li>
 );
 }

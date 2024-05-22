@@ -1,5 +1,5 @@
-import IconDarkMode from "@assets/icons/icon-dark-mode.svg?react";
-import IconLightMode from "@assets/icons/icon-light-mode.svg?react";
+import IconDarkMode from "@/assets/icons/icon-dark-mode.svg?react";
+import IconLightMode from "@/assets/icons/icon-light-mode.svg?react";
 
 
 

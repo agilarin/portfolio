@@ -1,6 +1,6 @@
 import React from "react";
-import IconMenu from "@assets/icons/icon-menu.svg?react";
-import IconClose from "@assets/icons/icon-close.svg?react";
+import IconMenu from "@/assets/icons/icon-menu.svg?react";
+import IconClose from "@/assets/icons/icon-close.svg?react";
 
 
 

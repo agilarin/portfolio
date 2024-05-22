@@ -1,5 +1,5 @@
 import React from 'react';
-import IconCopy from "@assets/icons/icon-copy.svg?react";
+import IconCopy from "@/assets/icons/icon-copy.svg?react";
 
 
 interface CopyListItemProps {

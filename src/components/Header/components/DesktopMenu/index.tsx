@@ -1,6 +1,6 @@
-import DesktopMenuItem from "@components/Header/components/DesktopMenu/DesktopMenuItem.tsx";
-import ThemeSwitch from "@components/Header/components/ThemeSwitch.tsx";
-import {MenuItem} from "@components/Header";
+import DesktopMenuItem from "@/components/Header/components/DesktopMenu/DesktopMenuItem.tsx";
+import ThemeSwitch from "@/components/Header/components/ThemeSwitch.tsx";
+import {MenuItem} from "@/components/Header";
 
 
 
@@ -10,7 +10,7 @@ interface DesktopMenuProps {
 
 function DesktopMenu({items}: DesktopMenuProps) {
   return (
-    <div className="hidden items-center sm:flex">
+    <div className="hidden items-center md:flex">
       <ul className="flex items-center">
         {items.map(({to, name}) =>
           <DesktopMenuItem key={name} to={to} name={name}/>

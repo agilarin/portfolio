@@ -1,13 +1,13 @@
-import Tag from "@components/Tag";
-import BlockDescription from "@pages/Home/components/BlockDescription";
-import ProjectsList from "@components/ProjectsList";
+import Tag from "@/components/Tag";
+import BlockDescription from "@/pages/Home/components/BlockDescription";
+import ProjectsList from "@/components/ProjectsList";
 import {projectsData} from "@/data.ts";
 
 
 
 function HomeProjects() {
   return (
-    <div className="py-16 sm:py-24 dark:bg-gray-900">
+    <div className="py-16 sm:py-24">
       <div className="container flex flex-col items-center">
         <Tag className="mb-4">
           Мои проекты

@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
 import {Project} from "@/types.ts";
-import Tag from "@components/Tag";
-import IconLink from "@assets/icons/icon-external-link.svg?react";
-import IconGithub from "@assets/icons/icon-github.svg?react";
+import Tag from "@/components/Tag";
+import IconLink from "@/assets/icons/icon-external-link.svg?react";
+import IconGithub from "@/assets/icons/icon-github.svg?react";
 
 
 
@@ -12,15 +12,7 @@ interface ProjectItemProps {
 
 function ProjectItem({project}: ProjectItemProps) {
   return (
-    <div className="rounded-xl shadow-md overflow-hidden lg:flex dark:shadow-2xl">
-
-      <div className="w-full p-8 bg-gray-50 dark:bg-gray-700">
-        <img
-          className="w-full rounded-xl"
-          src={project.img}
-          alt="Превью проекта"
-        />
-      </div>
+    <div className="rounded-xl shadow-md overflow-hidden lg:flex dark:shadow-2xl even:flex-row-reverse">
 
       <div className="w-full p-8 space-y-6 dark:bg-gray-800 lg:p-12">
         <h3 className="text-gray-900 font-semibold text-xl dark:text-gray-50">
@@ -58,6 +50,14 @@ function ProjectItem({project}: ProjectItemProps) {
             </Link>
           }
         </div>
+      </div>
+
+      <div className="w-full p-8 bg-gray-50 dark:bg-gray-700">
+        <img
+          className="w-full rounded-xl"
+          src={project.img}
+          alt="Превью проекта"
+        />
       </div>
 
     </div>

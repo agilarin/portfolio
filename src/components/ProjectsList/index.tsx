@@ -1,5 +1,5 @@
 import {Project} from "@/types.ts";
-import ProjectItem from "@components/ProjectsList/ProjectItem.tsx";
+import ProjectItem from "@/components/ProjectsList/ProjectItem.tsx";
 
 
 

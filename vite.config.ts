@@ -4,15 +4,12 @@ import svgr from 'vite-plugin-svgr';
 import * as path from 'path';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({command}) => ({
   plugins: [react(), svgr()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@assets': path.resolve(__dirname, 'src/assets'),
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@': path.resolve(__dirname, 'src')
     },
   },
-  // base: "/portfolio/"
-})
+  base: command === "build"? "/portfolio/" : "/"
+}))
