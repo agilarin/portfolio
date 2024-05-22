@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {createPortal} from "react-dom";
 import {MenuItem} from "@/components/Header";
 import MenuButton from "@/components/Header/components/BurgerMenu/MenuButton.tsx";
@@ -22,13 +22,24 @@ function BurgerMenu({items}: BurgerMenuProps) {
   }
 
 
+  useEffect(() => {
+    if (!show) {
+      document.body.className = "";
+    } else if (document.body.offsetWidth < window.innerWidth) {
+      document.body.className = "pr-[17px] overflow-hidden md:pr-0 md:overflow-auto";
+    } else {
+      document.body.className = "overflow-hidden md:overflow-auto";
+    }
+  }, [show]);
+
+
   return (
     <div className="md:hidden">
       <MenuButton show={show} setShow={setShow}/>
 
       {show && createPortal(
         <div
-          className="absolute inset-0 top-[68px] bg-gray-600/10 dark:bg-gray-50/10 md:hidden"
+          className={`fixed inset-0 top-[--header-height] bg-gray-600/10 dark:bg-gray-50/10 md:hidden`}
           onClick={closeMenu}
         >
           <div className="w-[320px] h-full ml-auto bg-white dark:bg-gray-900">

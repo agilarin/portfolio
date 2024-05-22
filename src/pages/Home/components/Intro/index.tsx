@@ -5,7 +5,7 @@ import IconLocation from "@/assets/icons/icon-location.svg?react";
 
 function Intro() {
   return (
-    <div className="py-16 sm:py-24">
+    <div className="pt-32 pb-16 sm:pb-24 sm:pt-40">
       <div className="container">
 
         <div className="mr-12">

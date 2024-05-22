@@ -1,3 +1,4 @@
+import {useEffect, useState} from "react";
 import {HOME_NAV} from "@/constans.ts";
 import BurgerMenu from "@/components/Header/components/BurgerMenu";
 import DesktopMenu from "@/components/Header/components/DesktopMenu";
@@ -9,7 +10,6 @@ export type MenuItem = {
   name: string
 }
 
-
 const menuItems: MenuItem[] = [
   {to: `#${HOME_NAV.about}`, name: "Обо мне"},
   {to: `#${HOME_NAV.technologies}`, name: "Технологии"},
@@ -19,8 +19,31 @@ const menuItems: MenuItem[] = [
 
 
 function Header() {
+  const [scrollClasses, setScrollClasses] = useState("")
+
+
+  useEffect(() => {
+    let scrollY = window.scrollY;
+    function scrollEvent() {
+      if (window.scrollY < 70) {
+        setScrollClasses("")
+      } else if (scrollY < window.scrollY) {
+        setScrollClasses("shadow -translate-y-[--header-height]")
+      } else if (scrollY > window.scrollY) {
+        setScrollClasses("shadow translate-y-0")
+      }
+      scrollY = window.scrollY;
+    }
+
+    window.addEventListener('scroll', scrollEvent)
+    return () => {
+      window.removeEventListener('scroll', scrollEvent)
+    }
+  }, [])
+
+
   return (
-    <div className="dark:bg-gray-950">
+    <div className={`fixed w-full bg-white/80 backdrop-blur transition-transform duration-200 ${scrollClasses} dark:bg-gray-950/80`}>
       <div className="container py-4 flex items-center justify-between">
         <Logo/>
         <DesktopMenu items={menuItems}/>
