@@ -1,6 +1,6 @@
+import {MenuItem} from "@/components/Header";
 import DesktopMenuItem from "@/components/Header/components/DesktopMenu/DesktopMenuItem.tsx";
 import ThemeSwitch from "@/components/Header/components/ThemeSwitch.tsx";
-import {MenuItem} from "@/components/Header";
 
 
 

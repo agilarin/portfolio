@@ -1,21 +1,24 @@
+import {Link} from "react-router-dom";
 
 
 
 interface BurgerMenuItemProps {
   to: string,
   name: string
+  onClick: () => void
 }
 
-function BurgerMenuItem({to, name}: BurgerMenuItemProps) {
+function BurgerMenuItem({to, name, onClick}: BurgerMenuItemProps) {
 
   return (
     <li>
-      <a
-        href={to}
+      <Link
+        to={to}
         className="inline-block w-full py-2 text-gray-600 dark:text-gray-300 font-medium"
+        onClick={onClick}
       >
         {name}
-      </a>
+      </Link>
     </li>
   );
 }

@@ -1,13 +1,14 @@
-import {createBrowserRouter} from "react-router-dom";
+import {createHashRouter} from "react-router-dom";
+import {PATHS} from "@/constans.ts";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
-import Projects from "@/pages/Projects";
+import Archive from "@/pages/Archive";
 
 
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
-    path: "/",
+    path: PATHS.home,
     element: <Layout/>,
     children: [
       {
@@ -15,12 +16,9 @@ export const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/projects",
-        element: <Projects/>,
+        path: PATHS.archive,
+        element: <Archive/>,
       },
     ]
   },
-],
-  {
-    basename: "/portfolio/"
-  });
+]);

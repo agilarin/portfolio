@@ -24,7 +24,7 @@ function Header() {
 
   useEffect(() => {
     let scrollY = window.scrollY;
-    function scrollEvent() {
+    function handleScroll() {
       if (window.scrollY < 70) {
         setScrollClasses("")
       } else if (scrollY < window.scrollY) {
@@ -35,9 +35,9 @@ function Header() {
       scrollY = window.scrollY;
     }
 
-    window.addEventListener('scroll', scrollEvent)
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', scrollEvent)
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
