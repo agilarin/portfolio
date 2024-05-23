@@ -8,7 +8,7 @@ export const projectsData : Project[] = [
   {
     id: "1",
     name: "GreenBook - Web Store",
-    description: "Веб-приложение интернет-магазина книг.",
+    description: "Веб-приложение интернет-магазина книг. В приложении имеется возможность создавать учетную запись, фильтровать и сортировать книги, а также добавлять их в свою корзину.",
     img: greenbookImg,
     tags: ["JavaScript", "TypeScript", "React", "Redux", "Scss", "Jest"],
     url: "",
