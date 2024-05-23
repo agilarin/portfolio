@@ -3,9 +3,13 @@ import Technologies from "@/pages/Home/components/Technologies";
 import Contacts from "@/pages/Home/components/Contacts";
 import HomeProjects from "@/pages/Home/components/HomeProjects";
 import {HOME_NAV} from "@/constans.ts";
+import useScrollToHashElement from "@/hooks/useScrollToHashElement.ts";
 
 
 function Home() {
+  useScrollToHashElement()
+
+
   return (
     <>
       <section
