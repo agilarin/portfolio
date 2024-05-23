@@ -2,7 +2,7 @@ import ProjectsList from "@/components/ProjectsList";
 import {projectsData} from "@/data.ts";
 
 
-function Projects() {
+function Archive() {
   return (
     <div className="min-h-full py-16 sm:py-24 dark:bg-gray-900">
       <div className="container">
@@ -14,4 +14,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Archive;

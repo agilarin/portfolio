@@ -1,6 +1,12 @@
 export const PATHS = {
   home: "/",
-  projects: "/projects",
+  archive: "/archive",
+}
+
+
+export const PAGE_TITLE = {
+  home: "Vladimir Grishin",
+  archive: "Archive | Vladimir Grishin"
 }
 
 
