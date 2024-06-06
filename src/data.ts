@@ -11,7 +11,7 @@ export const projectsData : Project[] = [
     description: "Веб-приложение интернет-магазина книг. В приложении имеется возможность создавать учетную запись, фильтровать и сортировать книги, а также добавлять их в свою корзину.",
     img: greenbookImg,
     tags: ["JavaScript", "TypeScript", "React", "Redux", "Scss", "Jest"],
-    url: "",
+    url: "https://vlagris.github.io/greenbook-web-store/",
     github: "https://github.com/vlagris/greenbook-web-store"
   },
   {
