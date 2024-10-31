@@ -10,7 +10,7 @@ function SocialMedia() {
         <IconGithub className="size-6 fill-gray-600 dark:fill-gray-300"/>
       </SocialMediaItem>
 
-      <SocialMediaItem to="https://t.me/agilerin">
+      <SocialMediaItem to="https://t.me/avsgle">
         <IconTelegram className="size-6 fill-gray-600 dark:fill-gray-300"/>
       </SocialMediaItem>
     </div>
