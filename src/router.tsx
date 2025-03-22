@@ -1,14 +1,14 @@
-import {createHashRouter} from "react-router-dom";
-import {PATHS} from "@/constans.ts";
+import {createBrowserRouter, createHashRouter, RouteObject} from "react-router-dom";
+import {ROUTER_PATHS} from "@/constants";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Archive from "@/pages/Archive";
 
 
 
-export const router = createHashRouter([
+const routes: RouteObject[] = [
   {
-    path: PATHS.home,
+    path: ROUTER_PATHS.HOME,
     element: <Layout/>,
     children: [
       {
@@ -16,9 +16,13 @@ export const router = createHashRouter([
         element: <Home/>,
       },
       {
-        path: PATHS.archive,
+        path: ROUTER_PATHS.ARCHIVE,
         element: <Archive/>,
       },
     ]
   },
-]);
+]
+
+
+
+export const router = import.meta.env.DEV ? createBrowserRouter(routes) : createHashRouter(routes);

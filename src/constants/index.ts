@@ -1,6 +1,11 @@
-export const PATHS = {
-  home: "/",
-  archive: "/archive",
+export const ROUTER_PATHS = {
+  HOME: "/",
+  ARCHIVE: "/archive",
+}
+
+export const LINK_PATHS = {
+  HOME: "/",
+  ARCHIVE: "/archive",
 }
 
 

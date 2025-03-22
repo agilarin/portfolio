@@ -1,15 +1,25 @@
-import {Project} from "@/types.ts";
+import {Project} from "@/types";
 import tetrisImg from "@/assets/projects/tetris-640.png";
 import greenbookImg from "@/assets/projects/greenbook-640.png";
 import kinopoiskImg from "@/assets/projects/kinopoisk-640.jpg";
+import webchatImg from "@/assets/projects/webchat-640.png";
 
 
 
 export const projectsData : Project[] = [
   {
+    id: "4",
+    name: "WebChat",
+    description: "WebChat - это веб приложение для общения между пользователями. Для использования приложения нужно зарегистрироваться. В приложении доступен поиск с помощью которого можно найти других пользователей для общения. Так же есть возможность редактировать свой аккаунт.",
+    img: webchatImg,
+    tags: ["JavaScript", "TypeScript", "React", "Scss", "Firebase"],
+    url: "https://vlagris.github.io/webchat/",
+    github: "https://github.com/vlagris/webchat/"
+  },
+  {
     id: "3",
     name: "Kinopoisk",
-    description: "Копия веб сайта kinopoisk.ru сделанная с помощью api сервиса kinopoisk.dev. Функционал сайта ограничен возможностями api сервиса. На сайте доступны списки фильмов, возможность поиска и карточки фильмов.",
+    description: "Копия веб сайта kinopoisk.ru сделанная с помощью api сервиса kinopoisk.dev. Функционал сайта ограничен возможностями api сервиса.",
     img: kinopoiskImg,
     tags: ["JavaScript", "TypeScript", "React", "Scss"],
     url: "https://vlagris.github.io/kinopoisk-app/",

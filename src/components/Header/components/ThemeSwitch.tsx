@@ -3,16 +3,17 @@ import IconLightMode from "@/assets/icons/icon-light-mode.svg?react";
 
 
 
-  function ThemeSwitch() {
-    function handleClick() {
-      if (localStorage.theme === 'dark') {
-        localStorage.theme = 'light'
-        document.documentElement.classList.remove('dark')
-      } else {
-        localStorage.theme = 'dark'
-        document.documentElement.classList.add('dark')
-      }
+function ThemeSwitch() {
+
+  function handleClick() {
+    if (localStorage.theme === 'dark') {
+      localStorage.theme = 'light'
+      document.documentElement.classList.remove('dark')
+    } else {
+      localStorage.theme = 'dark'
+      document.documentElement.classList.add('dark')
     }
+  }
 
 
   return (

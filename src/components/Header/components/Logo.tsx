@@ -1,12 +1,12 @@
 import {Link} from "react-router-dom";
-import {PATHS} from "@/constans.ts";
+import {LINK_PATHS} from "@/constants";
 
 
 function Logo() {
   return (
     <Link
-      className="text-xl text-gray-900 font-semibold md:text-2xl dark:text-gray-50"
-      to={PATHS.home}>
+      className="py-4 text-xl text-gray-900 font-semibold md:text-2xl dark:text-gray-50"
+      to={LINK_PATHS.HOME}>
       Vladimir Grishin
     </Link>
   );

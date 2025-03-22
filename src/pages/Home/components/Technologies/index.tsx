@@ -1,4 +1,4 @@
-import Tag from "@/components/Tag";
+import Chip from "@/components/Chip";
 import TechnologiesItem from "@/pages/Home/components/Technologies/TechnologiesItem.tsx";
 import IconJS from "@/assets/icons/icon-javascript.svg?react";
 import IconTS from "@/assets/icons/icon-typescript.svg?react";
@@ -29,9 +29,9 @@ function Technologies() {
     <div className="py-16 sm:py-24">
       <div className="container flex flex-col items-center">
 
-        <Tag className="mb-4">
+        <Chip className="mb-4">
           Технологии
-        </Tag>
+        </Chip>
 
         <BlockDescription>
           Мои основные инструметы и технологии:

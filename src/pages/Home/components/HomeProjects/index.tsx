@@ -1,7 +1,7 @@
-import Tag from "@/components/Tag";
+import Chip from "@/components/Chip";
 import BlockDescription from "@/pages/Home/components/BlockDescription";
 import ProjectsList from "@/components/ProjectsList";
-import {projectsData} from "@/data.ts";
+import {projectsData} from "@/data";
 
 
 
@@ -9,9 +9,9 @@ function HomeProjects() {
   return (
     <div className="py-16 sm:py-24">
       <div className="container flex flex-col items-center">
-        <Tag className="mb-4">
+        <Chip className="mb-4">
           Мои проекты
-        </Tag>
+        </Chip>
 
         <BlockDescription>
           Некоторые из моих проектов:

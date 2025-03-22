@@ -1,6 +1,5 @@
-import {Link} from "react-router-dom";
-import {Project} from "@/types.ts";
-import Tag from "@/components/Tag";
+import {Project} from "@/types";
+import Chip from "@/components/Chip";
 import IconLink from "@/assets/icons/icon-external-link.svg?react";
 import IconGithub from "@/assets/icons/icon-github.svg?react";
 
@@ -33,23 +32,23 @@ function ProjectItem({project}: ProjectItemProps) {
 
         <div className="flex flex-wrap gap-2">
           {project.tags.map(tag =>
-            <Tag key={tag}>
+            <Chip key={tag}>
               {tag}
-            </Tag>
+            </Chip>
           )}
         </div>
 
         <div className="flex items-center">
           {project.github &&
-            <Link className="p-1.5" to={project.github}>
+            <a className="p-1.5" href={project.github}>
               <IconGithub className="size-6 fill-gray-600 dark:fill-gray-300"/>
-            </Link>
+            </a>
           }
 
           {project.url &&
-            <Link className="p-1.5" to={project.url}>
+            <a className="p-1.5" href={project.url}>
               <IconLink className="size-6 stroke-gray-600 dark:stroke-gray-300"/>
-            </Link>
+            </a>
           }
         </div>
       </div>

@@ -1,8 +1,10 @@
-import {useEffect, useState} from "react";
-import {HOME_NAV} from "@/constans.ts";
+import {useEffect, useRef} from "react";
+import {HOME_NAV} from "@/constants";
 import BurgerMenu from "@/components/Header/components/BurgerMenu";
 import DesktopMenu from "@/components/Header/components/DesktopMenu";
 import Logo from "@/components/Header/components/Logo.tsx";
+import {debounce} from "@/utils/debounce.ts";
+
 
 
 export type MenuItem = {
@@ -17,34 +19,32 @@ const menuItems: MenuItem[] = [
   {to: `#${HOME_NAV.contacts}`, name: "Контакты"},
 ]
 
-
 function Header() {
-  const [scrollClasses, setScrollClasses] = useState("")
+  const headerRef = useRef<HTMLDivElement>(null);
 
 
   useEffect(() => {
-    let scrollY = window.scrollY;
-    function handleScroll() {
-      if (window.scrollY < 70) {
-        setScrollClasses("")
-      } else if (scrollY < window.scrollY) {
-        setScrollClasses("shadow -translate-y-[--header-height]")
-      } else if (scrollY > window.scrollY) {
-        setScrollClasses("shadow translate-y-0")
+    const debouncedHandleScroll = debounce(function handleScroll() {
+      if (window.scrollY === 0) {
+        headerRef.current?.classList.remove("shadow");
+      } else {
+        headerRef.current?.classList.add("shadow");
       }
-      scrollY = window.scrollY;
-    }
+    }, 20)
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', debouncedHandleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', debouncedHandleScroll)
     }
   }, [])
 
 
   return (
-    <div className={`fixed w-full bg-white/80 backdrop-blur transition-transform duration-200 ${scrollClasses} dark:bg-gray-950/80`}>
-      <div className="container py-4 flex items-center justify-between">
+    <div
+      ref={headerRef}
+      className="fixed w-full bg-white/80 backdrop-blur transition-transform duration-200 dark:bg-gray-950/80"
+    >
+      <div className="container flex items-center justify-between">
         <Logo/>
         <DesktopMenu items={menuItems}/>
         <BurgerMenu items={menuItems}/>

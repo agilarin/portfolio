@@ -1,5 +1,5 @@
 import ProjectsList from "@/components/ProjectsList";
-import {projectsData} from "@/data.ts";
+import {projectsData} from "@/data";
 
 
 function Archive() {

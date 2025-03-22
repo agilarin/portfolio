@@ -1,4 +1,4 @@
-import Tag from "@/components/Tag";
+import Chip from "@/components/Chip";
 import BlockDescription from "@/pages/Home/components/BlockDescription";
 import CopyList from "@/pages/Home/components/Contacts/CopyList";
 import SocialMedia from "@/components/SocialMedia";
@@ -9,9 +9,9 @@ function Contacts() {
     <div className="py-16 sm:py-24">
       <div className="container flex flex-col items-center">
 
-        <Tag className="mb-4">
+        <Chip className="mb-4">
           Как связаться
-        </Tag>
+        </Chip>
 
         <BlockDescription>
           Это мои контактные данные, через которые со мной можно связаться.

@@ -10,10 +10,10 @@ interface MenuItemProps {
 function DesktopMenuItem({to, name}: MenuItemProps) {
 
   return (
-    <li className="mr-6">
+    <li className="flex mr-6">
       <Link
         to={to}
-        className="text-gray-600 dark:text-gray-300 font-medium"
+        className="py-1.5 text-gray-600 dark:text-gray-300 font-medium"
       >
         {name}
       </Link>

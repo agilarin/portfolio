@@ -1,12 +1,12 @@
 import React from "react";
 
 
-interface TagProps {
+interface ChipProps {
   className?: string,
   children?: React.ReactNode,
 }
 
-function Tag({children, className}: TagProps) {
+function Chip({children, className}: ChipProps) {
   return (
     <div className={`py-1 px-5 bg-gray-200 rounded-xl dark:bg-gray-700 ${className}`}>
       <p className="text-gray-600 font-medium text-sm dark:text-gray-300">
@@ -16,4 +16,4 @@ function Tag({children, className}: TagProps) {
   );
 }
 
-export default Tag;
+export default Chip;
