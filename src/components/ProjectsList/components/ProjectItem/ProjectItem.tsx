@@ -13,7 +13,7 @@ function ProjectItem({project}: ProjectItemProps) {
   return (
     <div className="rounded-xl shadow-md overflow-hidden lg:flex dark:shadow-2xl even:flex-row-reverse">
 
-      <div className="w-full p-8 bg-gray-50 dark:bg-gray-700">
+      <div className="w-full p-4 md:p-8 bg-gray-50 dark:bg-gray-700">
         <img
           className="w-full rounded-xl"
           src={project.img}
@@ -21,7 +21,7 @@ function ProjectItem({project}: ProjectItemProps) {
         />
       </div>
 
-      <div className="w-full p-8 space-y-6 dark:bg-gray-800 lg:p-12">
+      <div className="w-full p-4 md:p-8 space-y-6 dark:bg-gray-800 lg:p-12">
         <h3 className="text-gray-900 font-semibold text-xl dark:text-gray-50">
           {project.name}
         </h3>
