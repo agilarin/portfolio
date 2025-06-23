@@ -30,6 +30,7 @@ export const projectsData: Project[] = [
       "Next.js",
       "Redux",
       "Scss",
+      "Material UI",
       "Firebase",
     ],
     url: "https://bookworm-agilarin.netlify.app/",
