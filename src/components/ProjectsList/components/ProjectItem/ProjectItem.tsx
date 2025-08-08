@@ -3,6 +3,18 @@ import Chip from "@/components/Chip";
 import IconLink from "@/assets/icons/icon-external-link.svg?react";
 import IconGithub from "@/assets/icons/icon-github.svg?react";
 
+import tetrisImage from "@/assets/projects/tetris-640.png";
+import bookwormImage from "@/assets/projects/bookworm-640.jpg";
+import kinopoiskImage from "@/assets/projects/kinopoisk-640.jpg";
+import webchatImage from "@/assets/projects/webchat-640.png";
+
+const imagesMap: Record<string, string> = {
+  webchatImage,
+  bookwormImage,
+  kinopoiskImage,
+  tetrisImage,
+};
+
 interface ProjectItemProps {
   project: Project;
 }
@@ -13,7 +25,7 @@ function ProjectItem({ project }: ProjectItemProps) {
       <div className="w-full p-4 md:p-8 bg-gray-50 dark:bg-gray-700">
         <img
           className="w-full rounded-xl"
-          src={project.img}
+          src={imagesMap[project.img]}
           alt="Превью проекта"
         />
       </div>

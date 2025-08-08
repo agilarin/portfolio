@@ -1,0 +1,48 @@
+[
+  {
+    "id": "4",
+    "name": "WebChat",
+    "description": "Веб-мессенджер с обменом сообщениями в реальном времени на базе Firestore. Реализованы приватные чаты, аутентификация через Firebase, поиск пользователей и адаптивный дизайн. Проект написан на React и TypeScript с использованием Zustand и Sass.",
+    "img": "webchatImage",
+    "tags": ["JavaScript", "TypeScript", "React", "Zod", "Firebase", "Scss"],
+    "url": "https://agilarin.github.io/webchat/",
+    "github": "https://github.com/agilarin/webchat/"
+  },
+  {
+    "id": "3",
+    "name": "BookWorm",
+    "description": "Интернет-магазин книг с каталогом, корзиной и отзывами. Реализована регистрация и авторизация через Firebase, управление состоянием корзины с Redux Toolkit и адаптивный дизайн. Проект выполнен на Next.js и TypeScript с акцентом на удобство пользователя и производительность.",
+    "img": "bookwormImage",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Redux",
+      "Zod",
+      "Material UI",
+      "Firebase",
+      "Scss"
+    ],
+    "url": "https://bookworm-agilarin.netlify.app/",
+    "github": "https://github.com/agilarin/bookworm-app/"
+  },
+  {
+    "id": "2",
+    "name": "Kinopoisk clone",
+    "description": "Клон сервиса для поиска информации о фильмах и сериалах с использованием API kinopoisk.dev. Реализован быстрый поиск, фильтрация по жанрам и категориям, детальные страницы фильмов и адаптивный дизайн. Сделан на React и TypeScript с React Query для работы с данными.",
+    "img": "kinopoiskImage",
+    "tags": ["JavaScript", "TypeScript", "React", "Scss"],
+    "url": "https://agilarin.github.io/kinopoisk-clone/",
+    "github": "https://github.com/agilarin/kinopoisk-clone/"
+  },
+  {
+    "id": "1",
+    "name": "Tetris",
+    "description": "Классическая игра Тетрис, реализованная на React и TypeScript. Проект демонстрирует навыки работы с логикой игры, состоянием и адаптивным интерфейсом.",
+    "img": "tetrisImage",
+    "tags": ["JavaScript", "TypeScript", "React", "Scss"],
+    "url": "https://agilarin.github.io/tetris-app/",
+    "github": "https://github.com/agilarin/tetris-app/"
+  }
+]
